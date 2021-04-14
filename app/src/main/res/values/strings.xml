@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Sipehaka</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Sipehaka</string>
+    <string name="nav_header_subtitle">Sistem Pakar Hama Kakao</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Login</string>
+
+    <string name="menu_beranda">Beranda</string>
+    <string name="menu_konsultasi">Konsultasi</string>
+    <string name="menu_lihat_hasil_diagnosa">Hasil Diagnosa</string>
+    <string name="menu_lihat_data">Lihat Data</string>
+    <string name="menu_bantuan">Bantuan Lihat Data</string>
+    <string name="menu_bantuan_lihat">Bantuan Konsultasi</string>
+    <string name="menu_tentang">Tentang</string>
+    <string name="menu_admin">Admin</string>
+    <string name="data_admin">Data Admin</string>
+    <string name="kelola_data_penyakit">Penyakit</string>
+    <string name="kelola_data_hama">Hama</string>
+    <string name="kelola_data_kakao">Kakao</string>
+    <string name="menu_dashboard">Menu</string>
+    <string name="admin">Admin</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login_admin">Login Admin</string>
+    <string name="silahkan_login_untuk_melanjutkan">Silahkan login untuk melanjutkan</string>
+    <string name="biodata">Fausiah Wulandari Hafid. lahir di Palopo pada tanggal 16 Juni 1998, anak kedua dari empat bersaudara, buah hati dari pasangan Abd Hafid dan Bungawati. Penulis menempuh pendidikan dasar di SD 75 Surutangan Kota Palopo tahun 2004 sampai dengan tahun 2010. Kemudian pada tahun yang sama penulis melanjutkan pendidikan ke sekolah menengah pertama di SMP Negeri 3 Bungku Tengah Kabupaten Morowali dan tamat pada tahun 2013. Selanjutnya, penulis melanjutkan pendidikan di SMK Negeri 1 Bungku Barat Kabupaten Morowali dan tamat pada tahun 2016, dan pada tahun yang sama penulis melanjutkan studi dibangku kuliah dan terdaftar sebagai Mahasiswa Program Studi Informatika pada Universitas Cokroaminoto Palopo. </string>
+</resources>

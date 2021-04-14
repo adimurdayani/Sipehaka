@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistasiActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Silahkan registrasi untuk melanjutkan login"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:background="@drawable/bg_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registasi Admin"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/tx_username"
+                android:paddingLeft="15dp"
+                android:textSize="10pt"
+                android:background="@drawable/bg_form"
+                android:drawableStart="@drawable/ic_user"
+                android:hint="   Username"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/tx_password"
+                android:paddingLeft="15dp"
+                android:textSize="10pt"
+                android:inputType="textPassword"
+                android:background="@drawable/bg_form"
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                android:hint="   Password"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/conf_password"
+                android:paddingLeft="15dp"
+                android:textSize="10pt"
+                android:background="@drawable/bg_form"
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                android:hint="   Konfirmasi Password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_registrasi"
+                android:background="@drawable/bg_form"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:text="Registrasi"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

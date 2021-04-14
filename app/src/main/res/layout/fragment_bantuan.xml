@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="BANTUAN LIHAT DATA"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berikut adalah bantuan lihat data dari aplikasi sistem pakar diagnosa penyakit kakao:"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klik tombol navigasi, seperti gambar di bawah."/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/konsul_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setelah tombol navigasi diklik maka akan menampilkan gambar di bawah ini. Di halaman ini anda bisa klik tombol bantuan lihat data. Untuk lebih jelasnya lihat gambar di bawah ini dan perhatikan tanda merah yang tertera di gambar di bawah."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/lihat1"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setelah tombol bantuan lihat data di klik, maka akan menampilkan tampilan seperti gambar di bawah. Pada tampilan ini anda bisa pilih salah satu tombol untuk melihat data yang ingin dilihat."/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/lihat2"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setelah salah satu tombol tersebut dipilih maka akan menampilkan data sesuai dengan tombol yang dipilih. Gambar di bawah sebagai contoh."/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@drawable/lihat3"/>
+
+    </LinearLayout>
+</ScrollView>

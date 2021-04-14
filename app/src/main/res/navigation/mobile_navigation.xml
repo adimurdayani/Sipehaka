@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_beranda">
+
+    <fragment
+        android:id="@+id/nav_beranda"
+        android:name="com.fauzia.sipehaka.ui.home.HomeFragment"
+        android:label="@string/menu_beranda"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_konsultasi"
+        android:name="com.fauzia.sipehaka.ui.konsultasi.GalleryFragment"
+        android:label="@string/menu_konsultasi"
+        tools:layout="@layout/fragment_kosutasi" />
+
+    <fragment
+        android:id="@+id/nav_lihat_hasildiagnosa"
+        android:name="com.fauzia.sipehaka.ui.lihathasildiagnosa.LihathasildiagnosaFragment"
+        android:label="@string/menu_lihat_hasil_diagnosa"
+        tools:layout="@layout/fragment_lihathasildiagnosa"/>
+
+    <fragment
+        android:id="@+id/nav_lihat_data"
+        android:name="com.fauzia.sipehaka.ui.lihatdata.SlideshowFragment"
+        android:label="@string/menu_lihat_data"
+        tools:layout="@layout/fragment_lihatdata" />
+
+    <fragment
+        android:id="@+id/nav_bantuan"
+        android:name="com.fauzia.sipehaka.ui.bantuan.ToolsFragment"
+        android:label="@string/menu_bantuan"
+        tools:layout="@layout/fragment_bantuan" />
+
+    <fragment
+        android:id="@+id/nav_bantuan_lihat"
+        android:name="com.fauzia.sipehaka.ui.bantuan_lihat.ShareFragment"
+        android:label="@string/menu_bantuan_lihat"
+        tools:layout="@layout/fragment_bantuanlihat" />
+
+    <fragment
+        android:id="@+id/nav_tentang"
+        android:name="com.fauzia.sipehaka.ui.tentang.SendFragment"
+        android:label="@string/menu_tentang"
+        tools:layout="@layout/fragment_tentang" />
+
+</navigation>

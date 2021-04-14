@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_beranda"
+            android:icon="@drawable/ic_beranda"
+            android:title="@string/menu_beranda" />
+        <item
+            android:id="@+id/nav_konsultasi"
+            android:icon="@drawable/ic_konsultasi"
+            android:title="@string/menu_konsultasi" />
+        <item
+            android:id="@+id/nav_lihat_hasildiagnosa"
+            android:icon="@drawable/ic_content"
+            android:title="@string/menu_lihat_hasil_diagnosa"/>
+        <item
+            android:id="@+id/nav_lihat_data"
+            android:icon="@drawable/ic_lihat_data"
+            android:title="@string/menu_lihat_data" />
+        <item
+            android:id="@+id/nav_bantuan"
+            android:icon="@drawable/ic_bantuan"
+            android:title="@string/menu_bantuan" />
+    </group>
+
+    <item android:title="Tambahan Akses">
+        <menu>
+            <item
+                android:id="@+id/nav_bantuan_lihat"
+                android:icon="@drawable/ic_bantuan_lihat"
+                android:title="@string/menu_bantuan_lihat" />
+            <item
+                android:id="@+id/nav_tentang"
+                android:icon="@drawable/ic_tentang"
+                android:title="@string/menu_tentang" />
+            <item
+                android:onClick="login"
+                android:id="@+id/nav_admin"
+                android:icon="@drawable/ic_admin"
+                android:title="@string/menu_admin" />
+        </menu>
+    </item>
+
+</menu>

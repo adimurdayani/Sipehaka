@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonsultasiGejalaPenyakitActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_dashboard_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo_admin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="SISTEM PAKAR "
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Pilih kolom ceklis untuk melakukan konsultasi"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="530dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="100dp"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_weight="1"-->
+                    <!--                        android:orientation="vertical">-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP1"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP2"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP3"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:text="GP4"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP5"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP6"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP7"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP8"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP9"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP10"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP11"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP12"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP13"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP14"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP15"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP16"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP17"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP18"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP19"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP20"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP21"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP22"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                        <androidx.cardview.widget.CardView-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="40dp"-->
+                    <!--                            android:layout_margin="5dp"-->
+                    <!--                            app:cardBackgroundColor="#FF9800"-->
+                    <!--                            app:cardElevation="5dp">-->
+
+                    <!--                            <TextView-->
+                    <!--                                android:layout_width="wrap_content"-->
+                    <!--                                android:layout_height="wrap_content"-->
+                    <!--                                android:layout_gravity="center"-->
+                    <!--                                android:layout_marginTop="5dp"-->
+                    <!--                                android:layout_marginBottom="5dp"-->
+                    <!--                                android:text="GP23"-->
+                    <!--                                android:textColor="#fff"-->
+                    <!--                                android:textSize="15dp"-->
+                    <!--                                android:textStyle="bold" />-->
+
+                    <!--                        </androidx.cardview.widget.CardView>-->
+
+                    <!--                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Bercak-bercak"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Coklat kehitaman"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Kulit batang agak belekuk"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Sering terdapat carian kemerahan"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Lapisan dalam berwarna merah anggur"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Bintik-bintik coklat pada daun muda"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Ranting gundul berbentuk seperti sapu"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Bintik-bintik kemerahan pada buah muda"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Nekrosis di antara tulang dan daun seperti kekurangan unsur cairan"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Bintik kemerah-merahan pada buah muda"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Garis-garis coklat pada jaringan kayu"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Tampak 3 noktah berwarna coklat kehitaman"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Daun menguning dengan bercak-bercak hijau"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Pada bagian ujuk cabang yang sakit"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Jamur membentuk pikriidia berwarna merah tua"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Jamur membentuk kerak berwarna merah jambu"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Jamur mula-mula membentuk miselium tipis mengkilat"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Infeksi terjadi pada bagian bawah cabang dan ranting"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Daun Menguning"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Gugur buah"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Daun layu"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Daun gugur"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="30dp"
+                            app:cardBackgroundColor="#FF9800"
+                            app:cardElevation="5dp">
+
+                            <CheckBox
+                                android:id="@+id/checkboxpenyakit23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:onClick="onCheckdiKlik"
+                                android:text="Gugur buah pada tanaman dapat mencapai 70-90% dari pentil yang tumbuh"
+                                android:textColor="#fff"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btndiagnosapenyakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:clickable="true"
+        android:src="@drawable/ic_search" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.fauzia.sipehaka">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Hasil.HasilDiagnosa1"></activity>
+        <activity android:name=".DetailBiodataActivity" />
+        <activity android:name=".KonsultasiGejalaHamaActivity" />
+        <activity android:name=".KonsultasiGejalaPenyakitActivity" />
+        <activity android:name=".LihatData3Activity" />
+        <activity android:name=".LihatData2Activity" />
+        <activity android:name=".LihatData1Activity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".TambahDataHamaActivity" />
+        <activity android:name=".UpdateDataHamaActivity" />
+        <activity android:name=".LihatDataHamaActivity" />
+        <activity android:name=".UpdateDataPenyakitActivity" />
+        <activity android:name=".LihatDataPenyakitActivity" />
+        <activity android:name=".TambahDataPenyakitActivity" />
+        <activity android:name=".PenyakitActivity" />
+        <activity android:name=".UpdateDataKakaoActivity" />
+        <activity android:name=".LihatDataKakaoActivity" />
+        <activity
+            android:name=".InputActivity"
+            android:parentActivityName=".KelolaDataActivity" />
+        <activity android:name=".DataAdminActivity" />
+        <activity android:name=".TentangActivity" />
+        <activity android:name=".KonsultasiActivity" />
+        <activity android:name=".KelolaDataActivity" />
+        <activity
+            android:name=".RegistasiActivity"
+            android:parentActivityName=".AdminActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
